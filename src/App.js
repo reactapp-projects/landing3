@@ -12,8 +12,8 @@ function App() {
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <ComingSoon />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
-      {/* <AboutUS />
-      <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
+      <AboutUS />
+      {/* <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <Connect /> */}
     </div>
   );

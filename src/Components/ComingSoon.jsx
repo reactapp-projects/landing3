@@ -26,7 +26,7 @@ const ComingSoon = () => {
     console.log("Email Address:", formData.emailAddress);
     try {
       const { data } = await axios.post(
-        "http://13.48.131.120:8001/users/member/",
+        "http://3.94.180.35:8001/users/member/",
         JSON.stringify({
           full_name: formData.fullName,
           email: formData.emailAddress,
