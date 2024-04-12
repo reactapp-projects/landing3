@@ -5,93 +5,92 @@
 }
 
 .first_text {
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   color: #262626;
 }
-
 .second_text {
-  font-size: 30px;
-  font-weight: 500;
+  font-weight: bold;
   text-align: center;
   margin: 0 auto;
-  color: #262626;
-  margin-bottom: 15vh;
+  color: #606060;
+  margin-bottom: 5%;
 }
 .grid {
   display: grid;
   margin: 0 auto;
   justify-content: center;
   justify-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .secondGrid {
-  background: linear-gradient(to right, #0c0ce9, #222e99);
-  /* For older browsers */
-  background: -webkit-linear-gradient(left, #0c0ce9, #222e99);
-  background: -moz-linear-gradient(left, #0c0ce9, #222e99);
-  background: -o-linear-gradient(left, #0c0ce9, #222e99);
-  width: 90%;
+  background: linear-gradient(to bottom, #6d37ff, #0c0ce9);
+  background: -webkit-linear-gradient(top, #6d37ff, #0c0ce9);
+  background: -moz-linear-gradient(top, #6d37ff, #0c0ce9);
+  background: -o-linear-gradient(top, #6d37ff, #0c0ce9);
 }
-.button:hover{
-    background-color: #e8eaef !important;
-    color: #050505;
+.button:hover {
+  background-color: #D87B26 !important;
+  color: #050505;
 }
-
 
 @media only screen and (min-width: 768px) {
   .first_text {
-    font-size: 60px;
+    font-size: 50px;
   }
   .second_text {
+    font-size: 30px;
     width: 696px;
   }
   .grid {
     grid-template-columns: 1fr 1fr;
-    width: 70%;
-    grid-gap: 20px;
+    width: 60%;
+    grid-gap: 18%;
   }
   .image {
-    height: 609px;
-    /* width: 329px; */
-    width: 400px;
-    background-color: #c8c8c8;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
   }
   .title {
-    font-size: 36px;
+    font-size: 1.5em;
     font-weight: 700;
     margin-top: 5vh;
   }
   .title1 {
-    font-size: 36px;
+    font-size: 1.5em;
     font-weight: 700;
     /* margin-top: 5vh; */
   }
   .description {
-    font-size: 16px;
+    font-size: 1em;
     color: #606060;
     margin-bottom: 5vh;
   }
+  .line {
+    background-color: #747070;
+    height: 3px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
   .secondGrid {
+    width: 70%;
     display: grid;
     margin: 0 auto;
-    border-radius: 25px;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 3fr 4fr;
+    padding: 1em;
   }
   .belowImage {
-    margin-left: 15vw;
-  }
-  .signup {
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 10px;
+    margin-left: 40%;
+    height: 100%;
+    width: 40%;
   }
   .form {
-    width: 60%;
+    width: 50%;
     display: grid;
-    grid-gap: 10px;
+    justify-content: center;
+    justify-items: center;
   }
   .input {
     background-color: transparent;
@@ -100,8 +99,9 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     color: white;
-    font-size: 25px;
+    font-size: 1.3em;
     font-weight: 700;
+    margin-bottom: 1vh;
   }
   .input::placeholder {
     color: white;
@@ -114,13 +114,14 @@
     border-bottom-left-radius: 10px;
   }
   .button {
-    background-color: #e8eaef;
+    background-color: #D87B26;
     color: #050505;
     border-radius: 80px;
-    width: 80%;
+    width: 110%;
     margin: 0 auto;
+    margin-left: -5%;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
     margin-top: 2vh;
   }
@@ -128,9 +129,10 @@
 
 @media only screen and (max-width: 768px) and (min-width: 400px) {
   .first_text {
-    font-size: 60px;
+    font-size: 40px;
   }
   .second_text {
+    font-size: 20px;
     width: 500px;
   }
   .grid {
@@ -139,11 +141,8 @@
     grid-gap: 15px;
   }
   .image {
-    height: 609px;
-    /* width: 329px; */
+    height: 100%;
     width: 100%;
-    /* width: 400px; */
-    background-color: #c8c8c8;
     border-radius: 20px;
   }
   .title {
@@ -161,23 +160,30 @@
     color: #606060;
     margin-bottom: 5vh;
   }
-  .secondGrid {
-    display: grid;
+  .line {
+    background-color: #747070;
+    height: 3px;
+    width: 80%;
     margin: 0 auto;
-    border-radius: 25px;
-    grid-template-columns: 1fr 2fr;
+    margin-bottom: 5vh;
   }
-
-  .signup {
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    margin-top: 10px;
-  }
-  .form {
+  .secondGrid {
     width: 90%;
     display: grid;
-    grid-gap: 10px;
+    margin: 0 auto;
+    grid-template-columns: 3fr 4fr;
+    padding: 1em;
+  }
+  .belowImage {
+    margin-left: 20%;
+    height: 100%;
+    width: 70%;
+  }
+  .form {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
   }
   .input {
     background-color: transparent;
@@ -186,8 +192,9 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     color: white;
-    font-size: 25px;
+    font-size: 1.3em;
     font-weight: 700;
+    margin-bottom: 1vh;
   }
   .input::placeholder {
     color: white;
@@ -200,13 +207,14 @@
     border-bottom-left-radius: 10px;
   }
   .button {
-    background-color: #e8eaef;
+    background-color: #D87B26;
     color: #050505;
     border-radius: 80px;
-    width: 100%;
+    width: 110%;
     margin: 0 auto;
+    margin-left: -5%;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     border: none;
     margin-top: 2vh;
   }
@@ -214,34 +222,30 @@
 
 @media only screen and (max-width: 400px) {
   .first_text {
-    font-size: 45px;
+    font-size: 25px;
   }
   .second_text {
-    margin-bottom: 5vh;
-  }
-  .second_text {
+    font-size: 13px;
     width: 350px;
   }
   .grid {
     grid-template-columns: 1fr;
-    width: 95%;
-    grid-gap: 15px;
+    width: 70%;
+    grid-gap: 10vh;
+    margin-bottom: 2vh;
   }
   .image {
-    height: 600px;
-    /* width: 329px; */
-    width: 90%;
-    /* width: 400px; */
-    background-color: #c8c8c8;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
   }
   .title {
-    font-size: 24px;
+    font-size: 1em;
     font-weight: 700;
     margin-top: 2vh;
   }
   .title1 {
-    font-size: 24px;
+    font-size: 1em;
     font-weight: 700;
   }
   .description {
@@ -249,26 +253,32 @@
     color: #606060;
     margin-bottom: 5vh;
   }
-  .secondGrid {
-    /* display: grid; */
+  .line {
+    background-color: #747070;
+    height: 3px;
+    width: 80%;
     margin: 0 auto;
-    border-radius: 25px;
-    justify-items: center;
-    padding: 10px;
+    margin-bottom: 5vh;
   }
-
-  .signup {
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    /* margin: 0 auto; */
-    margin-top: 10px;
-    margin-left: 10px;
+  .secondGrid {
+    width: 85%;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    padding: 1em;
+    border-radius: 15px;
+  }
+  .belowImage {
+    height: 100%;
+    width: 45%;
   }
   .form {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     display: grid;
-    /* grid-gap: 10px; */
+    justify-content: center;
+    justify-items: center;
   }
   .input {
     background-color: transparent;
@@ -277,8 +287,9 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     color: white;
-    font-size: 25px;
+    font-size: 0.9em;
     font-weight: 700;
+    margin-bottom: 0.5vh;
   }
   .input::placeholder {
     color: white;
@@ -291,13 +302,14 @@
     border-bottom-left-radius: 10px;
   }
   .button {
-    background-color: #e8eaef;
+    background-color: #D87B26;
     color: #050505;
     border-radius: 80px;
-    width: 100%;
+    width: 110%;
     margin: 0 auto;
-    font-size: 20px;
-    font-weight: 600;
+    margin-left: -5%;
+    font-size: 0.9em;
+    font-weight: 700;
     border: none;
     margin-top: 2vh;
   }
