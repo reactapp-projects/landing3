@@ -1,0 +1,141 @@
+.body {
+  background-image: url(../images/background.png);
+  padding: 8px;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
+  width: 100%;
+}
+.flexHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbarList {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbarList li {
+  white-space: nowrap;
+  margin-right: 50px;
+}
+
+.navbarList li a {
+  text-decoration: none;
+  color: white;
+}
+
+.headermain {
+  padding: 20px;
+  display: flex;
+  margin-left: 9%;
+  margin-top: 3%;
+}
+
+.headermain > div {
+  flex: 1;
+}
+
+.headertextmain {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Maven Pro";
+  margin-bottom: 10px;
+}
+
+.headertextmedium {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.headertextsmall {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Inter";
+  max-width: 300px;
+}
+
+.imagediv {
+  text-align: center;
+}
+
+.imageundertext {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  max-width: 180px;
+  text-align: center;
+}
+
+/* .headerimage {
+  display: flex;
+  align-items: center;
+} */
+.headerimage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: -30px;
+  margin-right: 4%;
+  /* flex: 2; */
+}
+
+.headerimage > div:first-child {
+  grid-column: 1 / -1;
+}
+
+.headerimage > div:last-child {
+  grid-column: 1 / -1;
+}
+
+.form {
+  width: 220px;
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 10%;
+}
+.input {
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-bottom: 3px solid white;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  width: 80%;
+}
+.input::placeholder {
+  color: white;
+}
+.input:focus {
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.button {
+  background-color: #d87b26;
+  color: #050505;
+  border-radius: 80px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  margin-top: 2vh;
+  margin-left: -20px;
+}

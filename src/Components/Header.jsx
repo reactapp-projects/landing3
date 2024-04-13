@@ -1,0 +1,124 @@
+import React from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import style from "./Header.module.css";
+import logo1 from "../images/logo1.png";
+import community from "../images/community.png";
+import bonding from "../images/bonding.png";
+import Groupimg from "../images/Groupimg.png";
+import rocket from "../images/rocket.png";
+import sparkle from "../images/sparkle.png";
+
+function Header() {
+  return (
+    <div className={style.body}>
+      <div className={style.flexHeader}>
+        <img
+          src={logo1}
+          alt="My Image"
+          style={{ width: "35px", height: "35px", marginLeft: "20px" }}
+        />
+        <nav className={style.navbar}>
+          <ul className={style.navbarList}>
+            <li>
+              <a href="#">How it works</a>
+            </li>
+            <li>
+              <a href="#">Feature highlights</a>
+            </li>
+            <li>
+              <a href="#">Join Now</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className={style.headermain}>
+        <div>
+          <p className={style.headertextmain}>Sparks</p>
+          <p className={style.headertextmedium}>Where conversations Ignite</p>
+          <p className={style.headertextsmall}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div>
+            <Form className={style.form}>
+              <Form.Control
+                className={style.input}
+                size="sm"
+                type="text"
+                name="fullName"
+                placeholder="Full Name *"
+                // value={formData.fullName}
+                // onChange={handleInputChange}
+              />
+              <Form.Control
+                className={style.input}
+                size="sm"
+                type="text"
+                name="emailAddress"
+                placeholder="Email Address *"
+                // value={formData.emailAddress}
+                // onChange={handleInputChange}
+              />
+              <Button variant="primary" type="submit" className={style.button}>
+                Subscribe for Early Access!
+              </Button>
+            </Form>
+          </div>
+        </div>
+        <div className={style.headerimage}>
+          <div className={style.imagediv}>
+            <img
+              src={sparkle}
+              alt="My Image"
+              style={{ width: "70px", height: "70px" }}
+            />
+            <p className={style.imageundertext}>Daily Sparks of Interactions</p>
+          </div>
+          <div className={style.imagediv}>
+            <img
+              src={bonding}
+              alt="My Image"
+              style={{ width: "70px", height: "70px" }}
+            />
+            <p className={style.imageundertext}>
+              Authentic Bonds Beyond Surface level
+            </p>
+          </div>
+          <div>
+            <img
+              src={Groupimg}
+              alt="My Image"
+              style={{ width: "110px", height: "110px" }}
+            />
+          </div>
+          <div className={style.imagediv}>
+            <img
+              src={rocket}
+              alt="My Image"
+              style={{ width: "70px", height: "70px" }}
+            />
+            <p className={style.imageundertext}>
+              Platform of Shared Experiences
+            </p>
+          </div>
+          <div className={style.imagediv}>
+            <img
+              src={community}
+              alt="My Image"
+              style={{ width: "70px", height: "70px" }}
+            />
+            <p className={style.imageundertext}>Community and Friendship</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Header;
