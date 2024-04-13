@@ -81,7 +81,7 @@ function Header() {
             aliquip ex ea commodo consequat.
           </p>
 
-          <div className={style.formdiv}>
+          <div className={style.formdivDesktop}>
             <Form className={style.form}>
               <Form.Control
                 className={style.input}
@@ -106,6 +106,31 @@ function Header() {
               </Button>
             </Form>
           </div>
+        </div>
+        <div className={style.formdivMobile}>
+          <Form className={style.form}>
+            <Form.Control
+              className={style.input}
+              size="sm"
+              type="text"
+              name="fullName"
+              placeholder="Full Name *"
+              // value={formData.fullName}
+              // onChange={handleInputChange}
+            />
+            <Form.Control
+              className={style.input}
+              size="sm"
+              type="text"
+              name="emailAddress"
+              placeholder="Email Address *"
+              // value={formData.emailAddress}
+              // onChange={handleInputChange}
+            />
+            <Button variant="primary" type="submit" className={style.button}>
+              Subscribe for Early Access!
+            </Button>
+          </Form>
         </div>
         <div className={style.headerimage}>
           <div className={style.imagediv}>
