@@ -66,22 +66,22 @@ function Header() {
       <div className={style.flexHeader}>
         <img
           src={logo1}
-          alt="My Image"
+          alt="MyImage"
           style={{ width: "35px", height: "35px", marginLeft: "20px" }}
         />
         <nav className={style.navbar}>
           <ul className={style.navbarList}>
             <li>
-              <a href="#">How it works</a>
+              <a href="#HowItWorks">How it works</a>
             </li>
             <li>
-              <a href="#">Feature highlights</a>
+              <a href="#FeaturesHighlights">Feature highlights</a>
             </li>
             <li>
-              <a href="#">Join Now</a>
+              <a href="#ComingSoon">Join Now</a>
             </li>
             <li>
-              <a href="#">About us</a>
+              <a href="#AboutUs">About us</a>
             </li>
           </ul>
         </nav>
@@ -123,12 +123,14 @@ function Header() {
       <div className={style.headermain}>
         <div className={style.textheader}>
           <p className={style.headertextmain}>Sparks</p>
-          <p className={style.headertextmedium}>Where conversations Ignite</p>
+          <p className={style.headertextmedium}>Where Conversations Ignite</p>
           <p className={style.headertextsmall}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Welcome to Sparks, the future of social connectivity. Discover a
+            platform where genuine interactions flourish through personalized
+            content tailored just for you. Join our mission to transform digital
+            conversations into meaningful connections by inviting you to
+            explore, share, and discover through daily thought-provoking
+            conversations.
           </p>
 
           <div className={style.formdivDesktop}>
