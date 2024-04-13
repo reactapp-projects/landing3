@@ -108,13 +108,13 @@ function Header() {
             <Dropdown.Item href="#HowItWorks" className={style.link}>
               How it works
             </Dropdown.Item>
-            <Dropdown.Item href="#Features" className={style.link}>
+            <Dropdown.Item href="#FeaturesHighlights" className={style.link}>
               Features
             </Dropdown.Item>
-            <Dropdown.Item href="#JoinNow" className={style.link}>
+            <Dropdown.Item href="#ComingSoon" className={style.link}>
               Join Now
             </Dropdown.Item>
-            <Dropdown.Item href="#Aboutus" className={style.link}>
+            <Dropdown.Item href="#AboutUs" className={style.link}>
               About us
             </Dropdown.Item>
           </Dropdown.Menu>
@@ -186,19 +186,11 @@ function Header() {
         </div>
         <div className={style.headerimage}>
           <div className={style.imagediv}>
-            <img
-              src={sparkle}
-              alt="My Image"
-              style={{ width: "90px", height: "90px" }}
-            />
+            <img src={sparkle} alt="My Image" className={style.imagebatch} />
             <p className={style.imageundertext}>Daily Sparks of Interactions</p>
           </div>
           <div className={style.imagediv}>
-            <img
-              src={bonding}
-              alt="My Image"
-              style={{ width: "90px", height: "90px" }}
-            />
+            <img src={bonding} alt="My Image" className={style.imagebatch} />
             <p className={style.imageundertext}>
               Authentic Bonds Beyond Surface level
             </p>
@@ -207,25 +199,17 @@ function Header() {
             <img
               src={Groupimg}
               alt="My Image"
-              style={{ width: "140px", height: "140px" }}
+              style={{ width: "130px", height: "130px" }}
             />
           </div>
           <div className={style.imagediv}>
-            <img
-              src={rocket}
-              alt="My Image"
-              style={{ width: "90px", height: "90px" }}
-            />
+            <img src={rocket} alt="My Image" className={style.imagebatch} />
             <p className={style.imageundertext}>
               Platform of Shared Experiences
             </p>
           </div>
           <div className={style.imagediv}>
-            <img
-              src={community}
-              alt="My Image"
-              style={{ width: "90px", height: "90px" }}
-            />
+            <img src={community} alt="My Image" className={style.imagebatch} />
             <p className={style.imageundertext}>Community and Friendship</p>
           </div>
         </div>

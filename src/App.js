@@ -13,8 +13,9 @@ function App() {
       {/* <header className="App-header">
         <Button>Hello</Button>
       </header> */}
-      {/* <Header />
-      <HowItWorks /> */}
+      <Header />
+      <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
+      <HowItWorks />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <FeatureHighlights />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>

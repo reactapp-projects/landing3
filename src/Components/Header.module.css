@@ -176,12 +176,27 @@
   display: none;
 }
 
+.imagebatch {
+  height: 90px;
+  width: 90px;
+}
+
 @media only screen and (max-width: 768px) {
   .headermain {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 50px;
+  }
+  .imagebatch {
+    height: 70px;
+    width: 70px;
+  }
+  .imageundertext {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    max-width: 180px;
+    text-align: center;
   }
 
   .formdivMobile {
