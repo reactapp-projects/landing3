@@ -5,7 +5,7 @@ import fire from "../images/Fire.png";
 function HowItWorks() {
   return (
     <div>
-      <div className={style.secondboxwelcom}>
+      <div className={style.workdiv}>
         <p className={style.secondheadertext}>How It Works</p>
         <p className={style.secondmaintext}>Engage | Share | Connect</p>
         <div className={style.gridContainer}>

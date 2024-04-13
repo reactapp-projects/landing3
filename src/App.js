@@ -15,6 +15,7 @@ function App() {
       </header> */}
       <Header />
       <HowItWorks />
+      <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <FeatureHighlights />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <ComingSoon />
