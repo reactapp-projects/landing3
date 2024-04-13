@@ -17,11 +17,11 @@ function App() {
       <HowItWorks /> */}
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <FeatureHighlights />
-      {/* <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
+      <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <ComingSoon />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <AboutUS />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }

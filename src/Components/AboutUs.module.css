@@ -102,7 +102,6 @@
   }
   .second_text {
     font-size: 20px;
-    width: 500px;
   }
   .imageDiv {
     display: grid;
@@ -161,7 +160,6 @@
   }
   .second_text {
     font-size: 13px;
-    width: 350px;
   }
   .imageDiv {
     display: grid;

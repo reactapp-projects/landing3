@@ -34,13 +34,12 @@
   color: #050505;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .first_text {
     font-size: 50px;
   }
   .second_text {
     font-size: 30px;
-    width: 696px;
   }
   .grid {
     grid-template-columns: 1fr 1fr;
@@ -127,13 +126,12 @@
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 400px) {
+@media only screen and (max-width: 900px) and (min-width: 500px) {
   .first_text {
     font-size: 40px;
   }
   .second_text {
     font-size: 20px;
-    width: 500px;
   }
   .grid {
     grid-template-columns: 1fr 1fr;
@@ -220,13 +218,12 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .first_text {
     font-size: 25px;
   }
   .second_text {
     font-size: 13px;
-    width: 350px;
   }
   .grid {
     grid-template-columns: 1fr;
