@@ -5,6 +5,7 @@ import FeatureHighlights from "./Components/FeatureHighlights";
 import ComingSoon from "./Components/ComingSoon";
 import AboutUS from "./Components/AboutUS";
 import Footer from "./Components/Footer";
+import HowItWorks from "./Components/HowItWorks";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Button>Hello</Button>
       </header> */}
       <Header />
+      <HowItWorks />
       <FeatureHighlights />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <ComingSoon />

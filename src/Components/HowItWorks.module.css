@@ -1,0 +1,48 @@
+.secondheadertext {
+  font-weight: 700;
+  text-align: center;
+  color: #262626;
+  font-size: 50px;
+}
+
+.secondmaintext {
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  color: #606060;
+  font-size: 35px;
+  margin-top: -15px;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
+.imageundertext {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 9px;
+  margin-bottom: 7px;
+}
+
+.secondimageundertext {
+  color: #000;
+  font-size: 15px;
+  max-width: 250px;
+}
+
+.imagediv {
+  height: 70px;
+  width: 70px;
+  margin-left: 7%;
+}
+
+@media only screen and (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
