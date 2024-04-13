@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 import FeatureHighlights from "./Components/FeatureHighlights";
 import ComingSoon from "./Components/ComingSoon";
 import AboutUS from "./Components/AboutUS";
-import Connect from "./Components/Connect";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -18,8 +18,7 @@ function App() {
       <ComingSoon />
       <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
       <AboutUS />
-      {/* <div style={{ backgroundColor: "#736D6D", height: "1px" }}></div>
-      <Connect /> */}
+      <Footer />
     </div>
   );
 }

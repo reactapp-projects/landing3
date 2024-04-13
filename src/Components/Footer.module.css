@@ -1,0 +1,168 @@
+.body {
+  background: linear-gradient(to bottom, #6d37ff, #0c0ce9);
+  background: -webkit-linear-gradient(top, #6d37ff, #0c0ce9);
+  background: -moz-linear-gradient(top, #6d37ff, #0c0ce9);
+  background: -o-linear-gradient(top, #6d37ff, #0c0ce9);
+  padding: 1%;
+  color: white;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .rights {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+    font-size: 0.5em;
+  }
+  .contactHeader {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 3%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .contactData {
+    font-size: 0.7em;
+  }
+  .contactIcon {
+    margin-right: 1%;
+  }
+  .followUs {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 3%;
+  }
+  .follow {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .followIcon {
+    margin-top: -15%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 60%;
+  }
+  .img {
+    width: 40%;
+    height: auto;
+    margin-left: 50%;
+  }
+  .footer1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 400px) {
+  .footer {
+    display: none;
+  }
+  .footerRes {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+  }
+  .rights {
+    position: absolute;
+    bottom: -6%;
+    left: 1%;
+    font-size: 0.4em;
+  }
+  .contactHeader {
+    font-size: 1em;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin-bottom: 3%;
+  }
+  .contactUs {
+    padding-left: 1%;
+  }
+  .contactData {
+    font-size: 0.5em;
+    margin-bottom: 1%;
+  }
+  .contactIcon {
+    margin-right: 1%;
+  }
+  .img {
+    width: 15%;
+    height: 15%;
+    margin-top: 5%;
+  }
+  .followIcon {
+    margin-top: -15%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .footer1 {
+    height: 30vh;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    display: none;
+  }
+  .footerRes {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+  }
+  .rights {
+    position: absolute;
+    bottom: 8%;
+    left: 1%;
+    font-size: 0.4em;
+  }
+  .contactHeader {
+    font-size: 1em;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    margin-bottom: 3%;
+  }
+  .contactUs {
+    padding-left: 1%;
+  }
+  .contactData {
+    font-size: 0.5em;
+    margin-bottom: 1%;
+  }
+  .contactIcon {
+    margin-right: 1%;
+  }
+  .img {
+    width: 15%;
+    height: 15%;
+    margin-top: 5%;
+  }
+  .followIcon {
+    margin-top: -15%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .footer1 {
+    height: 25vh;
+    position: relative;
+  }
+}
