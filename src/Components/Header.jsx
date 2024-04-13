@@ -187,7 +187,7 @@ function Header() {
             <img
               src={sparkle}
               alt="My Image"
-              style={{ width: "80px", height: "80px" }}
+              style={{ width: "90px", height: "90px" }}
             />
             <p className={style.imageundertext}>Daily Sparks of Interactions</p>
           </div>
@@ -195,7 +195,7 @@ function Header() {
             <img
               src={bonding}
               alt="My Image"
-              style={{ width: "80px", height: "80px" }}
+              style={{ width: "90px", height: "90px" }}
             />
             <p className={style.imageundertext}>
               Authentic Bonds Beyond Surface level
@@ -205,14 +205,14 @@ function Header() {
             <img
               src={Groupimg}
               alt="My Image"
-              style={{ width: "120px", height: "120px" }}
+              style={{ width: "140px", height: "140px" }}
             />
           </div>
           <div className={style.imagediv}>
             <img
               src={rocket}
               alt="My Image"
-              style={{ width: "80px", height: "80px" }}
+              style={{ width: "90px", height: "90px" }}
             />
             <p className={style.imageundertext}>
               Platform of Shared Experiences
@@ -222,7 +222,7 @@ function Header() {
             <img
               src={community}
               alt="My Image"
-              style={{ width: "80px", height: "80px" }}
+              style={{ width: "90px", height: "90px" }}
             />
             <p className={style.imageundertext}>Community and Friendship</p>
           </div>
