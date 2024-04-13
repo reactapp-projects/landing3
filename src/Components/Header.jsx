@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import axios from "axios";
+import Swal from "sweetalert2";
 import style from "./Header.module.css";
 import logo1 from "../images/logo1.png";
 import community from "../images/community.png";
@@ -11,6 +13,54 @@ import sparkle from "../images/sparkle.png";
 import Dropdown from "react-bootstrap/Dropdown";
 
 function Header() {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    emailAddress: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log("Full Name:", formData.fullName);
+    console.log("Email Address:", formData.emailAddress);
+    try {
+      const { data } = await axios.post(
+        "http://3.94.180.35:8001/users/member/",
+        JSON.stringify({
+          full_name: formData.fullName,
+          email: formData.emailAddress,
+        }),
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      if (data) {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: `${data.full_name} Successfully signed up!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Failed to sign up.\nEmail has problem.",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  };
   return (
     <div className={style.body}>
       <div className={style.flexHeader}>
@@ -82,15 +132,15 @@ function Header() {
           </p>
 
           <div className={style.formdivDesktop}>
-            <Form className={style.form}>
+            <Form className={style.form} onSubmit={handleSubmit}>
               <Form.Control
                 className={style.input}
                 size="sm"
                 type="text"
                 name="fullName"
                 placeholder="Full Name *"
-                // value={formData.fullName}
-                // onChange={handleInputChange}
+                value={formData.fullName}
+                onChange={handleInputChange}
               />
               <Form.Control
                 className={style.input}
@@ -98,8 +148,8 @@ function Header() {
                 type="text"
                 name="emailAddress"
                 placeholder="Email Address *"
-                // value={formData.emailAddress}
-                // onChange={handleInputChange}
+                value={formData.emailAddress}
+                onChange={handleInputChange}
               />
               <Button variant="primary" type="submit" className={style.button}>
                 Subscribe for Early Access!
@@ -108,15 +158,15 @@ function Header() {
           </div>
         </div>
         <div className={style.formdivMobile}>
-          <Form className={style.form}>
+          <Form className={style.form} onSubmit={handleSubmit}>
             <Form.Control
               className={style.input}
               size="sm"
               type="text"
               name="fullName"
               placeholder="Full Name *"
-              // value={formData.fullName}
-              // onChange={handleInputChange}
+              value={formData.fullName}
+              onChange={handleInputChange}
             />
             <Form.Control
               className={style.input}
@@ -124,8 +174,8 @@ function Header() {
               type="text"
               name="emailAddress"
               placeholder="Email Address *"
-              // value={formData.emailAddress}
-              // onChange={handleInputChange}
+              value={formData.emailAddress}
+              onChange={handleInputChange}
             />
             <Button variant="primary" type="submit" className={style.button}>
               Subscribe for Early Access!
