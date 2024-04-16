@@ -107,7 +107,7 @@
   .cardText {
     font-size: 12px;
     font-weight: bolder;
-    height: 30px;
+    /* height: 30px; */
     color: #08090a;
     margin-bottom: 0px !important;
   }
