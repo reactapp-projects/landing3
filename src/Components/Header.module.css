@@ -35,7 +35,7 @@
 .headermain {
   padding: 20px;
   display: flex;
-  margin-left: 9%;
+  margin-left: 14%;
   margin-top: 3%;
 }
 
@@ -88,7 +88,7 @@
   justify-items: center;
   align-items: center;
   margin-top: -30px;
-  margin-right: 4%;
+  margin-right: 10%;
   /* flex: 2; */
 }
 
