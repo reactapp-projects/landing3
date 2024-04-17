@@ -35,8 +35,10 @@
 .headermain {
   padding: 20px;
   display: flex;
-  margin-left: 14%;
-  margin-top: 3%;
+  width: 70%;
+  margin: auto;
+  /* margin-left: 14%;
+  margin-top: 3%; */
 }
 
 .headermain > div {
@@ -53,16 +55,16 @@
 
 .headertextmedium {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .headertextsmall {
   color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
   font-family: "Inter";
-  max-width: 300px;
+  max-width: 85%;
 }
 
 .imagediv {
@@ -87,8 +89,8 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  margin-top: -30px;
-  margin-right: 10%;
+  /* margin-top: -30px;
+  margin-right: 10%; */
   /* flex: 2; */
 }
 
