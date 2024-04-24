@@ -196,11 +196,7 @@ function Header() {
             </p>
           </div>
           <div>
-            <img
-              src={Groupimg}
-              alt="My Image"
-              style={{ width: "130px", height: "130px" }}
-            />
+            <img src={Groupimg} alt="My Image" className={style.imagemain} />
           </div>
           <div className={style.imagediv}>
             <img src={rocket} alt="My Image" className={style.imagebatch} />

@@ -182,17 +182,34 @@
   height: 90px;
   width: 90px;
 }
+.imagemain {
+  height: 130px;
+  width: 130px;
+}
 
 @media only screen and (max-width: 768px) {
   .headermain {
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
+    width: 100%;
   }
-  .imagebatch {
-    height: 70px;
-    width: 70px;
+  .headertextmain {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Maven Pro";
+    margin-bottom: 10px;
+    text-align: center;
   }
+  .headertextsmall {
+    max-width: 100%;
+  }
+  .headerimage {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
   .imageundertext {
     color: #ffffff;
     font-size: 13px;
@@ -219,5 +236,12 @@
 
   .formdivMobile {
     display: block;
+  }
+  .imagebatch {
+    height: 70px;
+    width: 70px;
+  }
+  .imagemain {
+    display: none;
   }
 }
