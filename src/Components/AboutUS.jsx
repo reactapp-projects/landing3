@@ -108,7 +108,7 @@ const AboutUS = () => {
         <div className={style.emptyBox}></div>
       </div>
       <div className={style.sponsers1}>
-        <Carousel controls="true" indicators="true">
+        <Carousel controls="true" indicators={false}>
           <Carousel.Item>
             <div className={style.icon1}>
               <svg
