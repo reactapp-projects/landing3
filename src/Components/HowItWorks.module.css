@@ -81,17 +81,20 @@
 
   .imageundertext {
     color: #000;
+    height: 45px;
     font-size: 14px;
     font-weight: 700;
     margin-top: 9px;
     margin-bottom: 7px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .secondimageundertext {
     color: #000;
     font-size: 10px;
     max-width: 170px;
-    margin-right: 8%;
+    margin-right: 7%;
   }
 }
