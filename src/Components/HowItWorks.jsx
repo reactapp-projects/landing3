@@ -24,9 +24,8 @@ function HowItWorks() {
             <img src={LightOn} alt="MyImage" className={style.imagediv} />
             <p className={style.imageundertext}>Receive Daily Spark</p>
             <p className={style.secondimageundertext}>
-              Respond to the spark with your ideas, stories, or opinions through
-              text, video, or voice messages. Share your unique perspective and
-              light up the community feed.
+              Begin with a daily spark - a thought-provoking prompt tailored to
+              pique your interest and spark deep conversations.
             </p>
           </div>
           <div>

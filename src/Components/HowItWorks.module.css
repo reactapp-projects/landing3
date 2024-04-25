@@ -56,9 +56,10 @@
   .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 15px;
     margin-top: 7%;
     justify-items: center;
+    padding: 0px 10px;
   }
 
   .secondheadertext {
@@ -80,7 +81,7 @@
 
   .imageundertext {
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     margin-top: 9px;
     margin-bottom: 7px;
@@ -91,6 +92,5 @@
     color: #000;
     font-size: 10px;
     max-width: 170px;
-    margin-left: 10%;
   }
 }
